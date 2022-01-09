@@ -1,0 +1,12 @@
+.button{
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: currentColor;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 25px;
+    box-sizing: border-box;
+}

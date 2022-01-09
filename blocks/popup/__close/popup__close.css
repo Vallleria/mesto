@@ -1,0 +1,35 @@
+.popup__close { 
+    position: absolute;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    top: -36px;
+    right: 0;
+}
+
+.popup__close::after{
+    position: absolute;
+    content: "";
+    background: url(../../../image/close-icon.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+@media screen and (min-width: 1024px) {
+    .popup__close {
+        width: 32px;
+        height: 32px;
+        right: -32px;
+    }
+    .popup__close::after{
+        width: 32px;
+        height: 32px;
+        background-size: 32px;
+    }
+}
+

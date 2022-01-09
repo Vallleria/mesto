@@ -1,0 +1,3 @@
+.places__like_active::after {
+   background-image: url(../../../../image/like-btn-active.svg);
+}
