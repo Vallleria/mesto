@@ -1,4 +1,4 @@
-.profile__add-btn{
+.profile__add-btn {
     position: relative;
     background-color: transparent;
     width: 100%;
@@ -6,23 +6,26 @@
     border: solid 2px rgba(255, 255, 255, 1);
     box-sizing: border-box;
     padding: 17px 0;
-
-}
-
-.profile__add-btn::after{
-    position: absolute;
-    content: "";
-    background: url(../../../image/add-btn.svg);
-    width: 16px;
-    height: 16px;
+    background-image: url(../../../image/add-btn.svg);
+    background-position: center;
     background-repeat: no-repeat;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25%, -25%);   
+    background-size: 16px 16px;
 }
+
+.profile__add-btn:hover {
+    border: solid 2px rgba(255, 255, 255, 60%);
+    background-image: url(../../../image/add-hover.svg);
+    background-size: 16px 16px;
+}
+
 @media screen and (min-width: 1024px) {
-    .profile__add-btn{
+    .profile__add-btn {
         width: 150px;
         height: 50px;
+        background-size: 22px 22px;
+    }
+
+    .profile__add-btn:hover {
+        background-size: 22px 22px;
     }
 }

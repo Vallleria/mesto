@@ -1,102 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mesto</title>
+        <link rel="stylesheet" href="pages/index.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesto</title>
-    <link rel="stylesheet" href="pages/index.css" />
-</head>
-
-<body>
-    <div class="page">
-        <header class="header section-center">
-            <img class="header__logo" src="./image/logo.svg" alt="лого">
-            <div class="header__line"></div>
-        </header>
-        <main class="content section-center">
-            <section class="profile">
-
-                <div class="profile__info">
-                    <img class="profile__image" src="./image/avatar.jpeg" alt="аватарка">
-                    <div class="profile__wrapper">
-                        <h1 class="profile__title">Жак-Ив Кусто</h1>
-                        <button class="profile__edit-btn" type="button"></button>
-                        <p class="profile__subtitle">Исследователь океана</p>
+    <body>
+        <div class="page">
+            <header class="header section-center">
+                <img class="header__logo" src="./image/logo.svg" alt="лого" />
+                <div class="header__line"></div>
+            </header>
+            <main class="content section-center">
+                <section class="profile">
+                    <div class="profile__info">
+                        <img class="profile__image" src="./image/avatar.jpeg" alt="аватарка" />
+                        <div class="profile__wrapper">
+                            <h1 class="profile__title">Жак-Ив Кусто</h1>
+                            <button class="profile__edit-btn" type="button"></button>
+                            <p class="profile__subtitle">Исследователь океана</p>
+                        </div>
                     </div>
+                    <button class="profile__add-btn" type="button"></button>
+                </section>
+                <section class="places">
+                    <ul class="places__cards">
+                        <li class="places__card">
+                            <img class="places__image" src="./image/places1.jpg" alt="карачаевск" />
+                            <div class="places__card-footer">
+                                <h2 class="places__title">Карачаевск</h2>
+                                <button type="image" class="places__like places__like_active"></button>
+                            </div>
+                        </li>
+                        <li class="places__card">
+                            <img class="places__image" src="./image/places2.jpg" alt="гора эльбрус" />
+                            <div class="places__card-footer">
+                                <h2 class="places__title">Гора Эльбрус</h2>
+                                <button type="image" class="places__like"></button>
+                            </div>
+                        </li>
+                        <li class="places__card">
+                            <img class="places__image" src="./image/places3.jpg" alt="домбай" />
+                            <div class="places__card-footer">
+                                <h2 class="places__title">Домбай</h2>
+                                <button type="image" class="places__like"></button>
+                            </div>
+                        </li>
+                        <li class="places__card">
+                            <img class="places__image" src="./image/places4.jpg" alt="гора эльбрус" />
+                            <div class="places__card-footer">
+                                <h2 class="places__title">Гора Эльбрус</h2>
+                                <button type="image" class="places__like"></button>
+                            </div>
+                        </li>
+                        <li class="places__card">
+                            <img class="places__image" src="./image/places5.jpg" alt="домбай" />
+                            <div class="places__card-footer">
+                                <h2 class="places__title">Домбай</h2>
+                                <button type="image" class="places__like"></button>
+                            </div>
+                        </li>
+                        <li class="places__card">
+                            <img class="places__image" src="./image/places6.jpg" alt="карачаевск" />
+                            <div class="places__card-footer">
+                                <h2 class="places__title">Карачаевск</h2>
+                                <button type="image" class="places__like"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="footer section-center">
+                <p class="footer__copyright">&copy; 2020. Mesto Russia</p>
+            </footer>
 
+            <div class="popup popup_opened overlay">
+                <div class="popup__container">
+                    <button class="popup__close" aria-label="закрытие модального окна"></button>
+                    <form class="form popup__form" name="edit-profile">
+                        <h2 class="form__title">Редктировать профиль</h2>
+                        <input type="text" class="form__input" placeholder="Жак-Ив Кусто" />
+                        <input type="text" class="form__input" placeholder="Исследователь океана" />
+                        <button type="submit" class="button button_type_primary popup__button">Сохранить</button>
+                    </form>
                 </div>
-                <button class="profile__add-btn" type="button"> </button>
-            </section>
-            <section class="places">
-                <ul class="places__cards">
-                    <li class="places__card">
-                        <img class="places__image" src="./image/places1.jpg" alt="карачаевск">
-                        <div class="places__card-footer">
-                            <h2 class="places__title">Карачаевск</h2>
-                            <button class="places__like place__like_active"> </button>
-                        </div>
-                    </li>
-                    <li class="places__card">
-                        <img class="places__image" src="./image/places2.jpg" alt="гора эльбрус">
-                        <div class="places__card-footer">
-                            <h2 class="places__title">Гора Эльбрус</h2>
-                            <button class="places__like"> </button>
-                        </div>
-                    </li>
-                    <li class="places__card">
-                        <img class="places__image" src="./image/places3.jpg" alt="домбай">
-                        <div class="places__card-footer">
-                            <h2 class="places__title">Домбай</h2>
-                            <button class="places__like"> </button>
-                        </div>
-                    </li>
-                    <li class="places__card">
-                        <img class="places__image" src="./image/places4.jpg" alt="гора эльбрус">
-                        <div class="places__card-footer">
-                            <h2 class="places__title">Гора Эльбрус</h2>
-                            <button class="places__like"> </button>
-                        </div>
-                    </li>
-                    <li class="places__card">
-                        <img class="places__image" src="./image/places5.jpg" alt="домбай">
-                        <div class="places__card-footer">
-                            <h2 class="places__title">Домбай</h2>
-                            <button class="places__like"> </button>
-                        </div>
-                    </li>
-                    <li class="places__card">
-                        <img class="places__image" src="./image/places6.jpg" alt="карачаевск">
-                        <div class="places__card-footer">
-                            <h2 class="places__title">Карачаевск</h2>
-                            <button class="places__like"> </button>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer class="footer section-center">
-            <p class="footer__copyright">&copy; 2020. Mesto Russia</p>
-        </footer>
-
-
-
-        <div class="popup popup_opened overlay">
-            <div class="popup__container">
-                <button class="popup__close" aria-label="закрытие модального окна"> </button>
-                <form class="form popup__form" name="edit-profile">
-                    <h2 class="form__title">Редктировать профиль</h2>
-                    <input type="text" class="form__input" placeholder="Жак-Ив Кусто">
-                    <input type="text" class="form__input" placeholder="Исследователь океана">
-                    <button type="submit" class="button button_type_primary popup__button">Сохранить</button>
-                </form>
             </div>
         </div>
-
-
-
-    </div>
-</body>
-
+    </body>
 </html>
