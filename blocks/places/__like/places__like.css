@@ -5,9 +5,10 @@
     height: 19px;
     border: none;
     background-image: url(../../../image/like.svg);
+    cursor: pointer;
 
 }
 
-.places__like:hover {
-    background-image: url(../../../image/like-hover.svg);
+.places__like:hover{
+  opacity: 0.6;
 }

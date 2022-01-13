@@ -10,12 +10,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
+    cursor: pointer;
 }
 
 .profile__add-btn:hover {
-    border: solid 2px rgba(255, 255, 255, 60%);
-    background-image: url(../../../image/add-hover.svg);
-    background-size: 16px 16px;
+    opacity: 0.6;
 }
 
 @media screen and (min-width: 1024px) {
@@ -25,7 +24,4 @@
         background-size: 22px 22px;
     }
 
-    .profile__add-btn:hover {
-        background-size: 22px 22px;
-    }
 }

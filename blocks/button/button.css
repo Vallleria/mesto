@@ -9,6 +9,7 @@
     line-height: 22px;
     padding: 14px 25px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .button:hover {
     background-color: rgba(0, 0, 0, 80%);
