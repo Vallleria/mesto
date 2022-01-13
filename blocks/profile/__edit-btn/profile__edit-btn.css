@@ -3,11 +3,11 @@
     background: transparent;
     width: 18px;
     height: 18px;
-    /* border: solid 1px rgba(255, 255, 255, 1); */
     border: none;
     background-image: url(../../../image/edit-btn.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     cursor: pointer;
 }
 

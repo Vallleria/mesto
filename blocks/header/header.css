@@ -1,11 +1,19 @@
-.header{
+.header {
+    padding: 0 5.9vw;
     padding-top: 45px;
     border-bottom: solid 1px rgba(84, 84, 84, 1);
     margin-bottom: 40px;
+    /* position: relative; */
 }
 
+
 @media screen and (min-width: 1024px) {
-    .header{
+    .header {
         margin-bottom: 67px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 5.9vw;
+        margin-right: 5.9vw;
     }
+
 }

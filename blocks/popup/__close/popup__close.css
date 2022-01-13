@@ -13,8 +13,7 @@
 }
 
 .popup__close:hover {
-    background: url(../../../image/close-hover.svg);
-    background-size: 20px 20px;
+    opacity: 0.6;
 
 }
 
@@ -27,7 +26,4 @@
         background-size: 32px 32px;
     }
 
-    .popup__close:hover {
-        background-size: 32px 32px;
-    }
 }

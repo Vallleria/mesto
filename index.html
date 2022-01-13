@@ -10,7 +10,7 @@
 
     <body>
         <div class="page">
-            <header class="header section-center">
+            <header class="header">
                 <img class="header__logo" src="./image/logo.svg" alt="лого" />
             </header>
             <main class="content section-center">
@@ -76,14 +76,14 @@
                 <p class="footer__copyright">&copy; 2020. Mesto Russia</p>
             </footer>
 
-            <div class="popup popup_opened overlay">
+            <div class="popup popup_opened">
                 <div class="popup__container">
-                    <button class="popup__close" aria-label="закрытие модального окна"></button>
+                    <button type="button" class="popup__close" aria-label="закрытие модального окна"></button>
+                    <h2 class="popup__title">Редaктировать профиль</h2>
                     <form class="form popup__form" name="edit-profile">
-                        <h2 class="form__title">Редaктировать профиль</h2>
-                        <input type="text" class="form__input" placeholder="Жак-Ив Кусто" />
-                        <input type="text" class="form__input" placeholder="Исследователь океана" />
-                        <button type="submit" class="button button_type_primary popup__button">Сохранить</button>
+                            <input type="text" class="form__input" placeholder="Жак-Ив Кусто" name="name"/>
+                        <input type="text" class="form__input" placeholder="Исследователь океана" name="profession" />
+                        <button type="submit" class="button button_type_primary">Сохранить</button>
                     </form>
                 </div>
             </div>
