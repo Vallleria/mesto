@@ -5,5 +5,19 @@
     padding-bottom: 10px;
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
 }
+.form__input:nth-child(2){
+    margin-bottom: 42px;
+}
+
+@media screen and (min-width: 1024px) {
+    .form__input{
+        margin-bottom: 20px;
+    }
+
+    .form__input:nth-child(2){
+        margin-bottom: 44px;
+    }
+}
+

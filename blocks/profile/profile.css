@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 37px;
+    
 }
 @media screen and (min-width: 1024px) {
     .profile{
