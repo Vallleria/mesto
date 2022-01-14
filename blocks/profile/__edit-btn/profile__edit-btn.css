@@ -1,5 +1,5 @@
 .profile__edit-btn {
-    position: relative;
+    position: absolute;
     background: transparent;
     width: 18px;
     height: 18px;
@@ -9,16 +9,22 @@
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    right: -28px;
+    top: 4px;
+
 }
 
-.profile__edit-btn:hover{
+.profile__edit-btn:hover {
     opacity: 0.6;
 }
+
 @media screen and (min-width: 1024px) {
     .profile__edit-btn {
         width: 24px;
         height: 24px;
         margin-bottom: 16px;
+        right: -43px;
+        top: 13px;
 
     }
 }
