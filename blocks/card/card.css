@@ -1,8 +1,10 @@
-.places__card{
+.card{
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
+    position: relative;
+    
 }
 
 
