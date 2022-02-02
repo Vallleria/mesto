@@ -29,7 +29,7 @@ const profileEditBtn = document.querySelector('.profile__edit-btn');
 
 // Profile popup
 const profilePopup = document.querySelector('.profile-popup');
-const popupCloseBtn = profilePopup.querySelector('.popup__close');
+const profilePopupCloseBtn = profilePopup.querySelector('.profile-popup__close');
 const profileTitle = document.querySelector('.profile__title');
 const profileSubtitle = document.querySelector('.profile__subtitle');
 const formInputName = profilePopup.querySelector('.form__input[name="name"]');
@@ -42,7 +42,7 @@ const placesCards = document.querySelector('.places__cards');
 
 // Image popup
 const imagePopup = document.querySelector('.image-popup');
-const imagePopupCloseBtn = imagePopup.querySelector('.popup__close');
+const imagePopupCloseBtn = imagePopup.querySelector('.image-popup__close');
 const formInputImage = imagePopup.querySelector('.form__input[name="image"]');
 const formInputTitle = imagePopup.querySelector('.form__input[name="title"]');
 const imagePopupForm = imagePopup.querySelector('.image-popup__form');
@@ -53,12 +53,7 @@ const showImagePopupImg = showImagePopup.querySelector('.show-image-popup__img')
 const cardTemplate = document.querySelector('.card-template');
 
 
-function togglePopup() {
-    profilePopup.classList.toggle("popup_opened");
-    fillPopupForm();
-}
-
-function fillPopupForm() {
+function fillProfilePopupForm() {
     formInputName.value = profileTitle.textContent;
     formInputProfession.value = profileSubtitle.textContent;
 }
@@ -67,8 +62,7 @@ function updateProfile(evt) {
     evt.preventDefault();
     profileTitle.textContent = formInputName.value;
     profileSubtitle.textContent = formInputProfession.value;
-    togglePopup();
-
+    togglePopup(profilePopup);
 }
 
 
@@ -135,9 +129,10 @@ function addImage(evt) {
 
 
 profileEditBtn.addEventListener('click', function () {
-    togglePopup(profilePopup)
+    fillProfilePopupForm();
+    togglePopup(profilePopup);
 });
-popupCloseBtn.addEventListener('click', function () {
+profilePopupCloseBtn.addEventListener('click', function () {
     togglePopup(profilePopup)
 });
 profilePopupForm.addEventListener('submit', updateProfile);
